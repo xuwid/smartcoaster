@@ -1,0 +1,414 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.smartcoaster"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:9:1-62
+15-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:9:18-60
+16    <uses-permission
+16-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:2:1-63
+17        android:name="android.permission.BLUETOOTH"
+17-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:2:18-61
+18        android:maxSdkVersion="30" />
+18-->[:reactive_ble_mobile] C:\Users\hamza\smartcoaster\android\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-35
+19    <uses-permission
+19-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:3:1-69
+20        android:name="android.permission.BLUETOOTH_ADMIN"
+20-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:3:18-67
+21        android:maxSdkVersion="30" />
+21-->[:reactive_ble_mobile] C:\Users\hamza\smartcoaster\android\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-35
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:4:1-74
+22-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:4:18-72
+23    <uses-permission
+23-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:5:1-69
+24        android:name="android.permission.BLUETOOTH_SCAN"
+24-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:5:18-66
+25        android:usesPermissionFlags="neverForLocation" />
+25-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\hamza\.gradle\caches\transforms-3\9344078a9f6a1e78ef1d58779e0c7353\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:24:9-55
+26    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+26-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:6:1-72
+26-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:6:18-69
+27    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+27-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:7:1-76
+27-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:7:18-74
+28    <uses-permission android:name="android.permission.VIBRATE" />
+28-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:8:1-61
+28-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:8:18-59
+29    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+29-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:10:1-74
+29-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:10:18-72
+30    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+30-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:11:1-71
+30-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:11:18-69
+31    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+31-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:12:1-71
+31-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:12:18-69
+32    <uses-permission android:name="android.permission.WAKE_LOCK" />
+32-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:13:1-63
+32-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:13:18-61
+33    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+33-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:14:1-72
+33-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:14:18-70
+34    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+34-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:15:1-73
+34-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:15:18-71
+35    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+35-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:11:1-71
+35-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:11:18-69
+36    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+36-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:12:1-71
+36-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:12:18-69
+37    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+37-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:18:1-76
+37-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:18:18-74
+38    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+38-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:4:1-74
+38-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:4:18-72
+39    <!--
+40 Required to query activities that can process text, see:
+41         https://developer.android.com/training/package-visibility and
+42         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+43
+44         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+45    -->
+46    <queries>
+46-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:60:5-65:15
+47        <intent>
+47-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:61:9-64:18
+48            <action android:name="android.intent.action.PROCESS_TEXT" />
+48-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:62:13-72
+48-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:62:21-70
+49
+50            <data android:mimeType="text/plain" />
+50-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:63:13-50
+50-->C:\Users\hamza\smartcoaster\android\app\src\main\AndroidManifest.xml:63:19-48
+51        </intent>
+52    </queries>
+53
+54    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+54-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-77
+54-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-74
+55    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+55-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-89
+55-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-86
+56
+57    <uses-feature android:name="android.hardware.wifi" />
+57-->[:wifi_iot] C:\Users\hamza\smartcoaster\android\build\wifi_iot\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-58
+57-->[:wifi_iot] C:\Users\hamza\smartcoaster\android\build\wifi_iot\intermediates\merged_manifest\debug\AndroidManifest.xml:9:19-55
+58
+59    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+59-->[:wifi_iot] C:\Users\hamza\smartcoaster\android\build\wifi_iot\intermediates\merged_manifest\debug\AndroidManifest.xml:14:5-79
+59-->[:wifi_iot] C:\Users\hamza\smartcoaster\android\build\wifi_iot\intermediates\merged_manifest\debug\AndroidManifest.xml:14:22-76
+60    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+60-->[:wifi_iot] C:\Users\hamza\smartcoaster\android\build\wifi_iot\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-73
+60-->[:wifi_iot] C:\Users\hamza\smartcoaster\android\build\wifi_iot\intermediates\merged_manifest\debug\AndroidManifest.xml:19:22-70
+61    <uses-permission
+61-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:10:5-12:38
+62        android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+62-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:11:9-77
+63        android:maxSdkVersion="22" />
+63-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:12:9-35
+64
+65    <permission
+65-->[androidx.core:core:1.13.1] C:\Users\hamza\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+66        android:name="com.example.smartcoaster.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+66-->[androidx.core:core:1.13.1] C:\Users\hamza\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+67        android:protectionLevel="signature" />
+67-->[androidx.core:core:1.13.1] C:\Users\hamza\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+68
+69    <uses-permission android:name="com.example.smartcoaster.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- required for API 23 - 30, no android:maxSdkVersion because of a potential breaking change -->
+69-->[androidx.core:core:1.13.1] C:\Users\hamza\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+69-->[androidx.core:core:1.13.1] C:\Users\hamza\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+70    <!-- TODO: add android:maxSdkVersion on 2.0.0 -->
+71    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+71-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\hamza\.gradle\caches\transforms-3\9344078a9f6a1e78ef1d58779e0c7353\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:18:5-88
+71-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\hamza\.gradle\caches\transforms-3\9344078a9f6a1e78ef1d58779e0c7353\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:18:29-85
+72    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- for android -->
+72-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\hamza\.gradle\caches\transforms-3\9344078a9f6a1e78ef1d58779e0c7353\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:19:5-86
+72-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\hamza\.gradle\caches\transforms-3\9344078a9f6a1e78ef1d58779e0c7353\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:19:29-83
+73    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+74    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+75    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+76    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+77    <!-- for Samsung -->
+78    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+78-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+78-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+79    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+79-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+79-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+80    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+80-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+80-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+81    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+81-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+81-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+82    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+82-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+82-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+83    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+83-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+83-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+84    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+84-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+84-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+85    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+85-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+85-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+86    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+86-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+86-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+87    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+87-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+87-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+88    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+88-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+88-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+89    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+89-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+89-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+90    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+90-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+90-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+91    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+91-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+91-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+92    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+92-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+92-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+93    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+93-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+93-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hamza\.gradle\caches\transforms-3\3e9ff9a9d67a6018f311b1443abee20b\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+94
+95    <application
+96        android:name="android.app.Application"
+97        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+97-->[androidx.core:core:1.13.1] C:\Users\hamza\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+98        android:debuggable="true"
+99        android:icon="@mipmap/ic_launcher"
+100        android:label="smartcoaster"
+101        android:networkSecurityConfig="@xml/network_security_config" >
+102        <activity
+103            android:name="com.example.smartcoaster.MainActivity"
+104            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+105            android:exported="true"
+106            android:hardwareAccelerated="true"
+107            android:launchMode="singleTop"
+108            android:taskAffinity=""
+109            android:theme="@style/LaunchTheme"
+110            android:windowSoftInputMode="adjustResize" >
+111
+112            <!--
+113                 Specifies an Android theme to apply to this Activity as soon as
+114                 the Android process has started. This theme is visible to the user
+115                 while the Flutter UI initializes. After that, this theme continues
+116                 to determine the Window background behind the Flutter UI.
+117            -->
+118            <meta-data
+119                android:name="io.flutter.embedding.android.NormalTheme"
+120                android:resource="@style/NormalTheme" />
+121
+122            <intent-filter>
+123                <action android:name="android.intent.action.MAIN" />
+124
+125                <category android:name="android.intent.category.LAUNCHER" />
+126            </intent-filter>
+127        </activity>
+128        <!--
+129             Don't delete the meta-data below.
+130             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+131        -->
+132        <meta-data
+133            android:name="flutterEmbedding"
+134            android:value="2" />
+135
+136        <receiver
+136-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-17:39
+137            android:name="me.carda.awesome_notifications.DartNotificationActionReceiver"
+137-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-89
+138            android:exported="true" />
+138-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-36
+139        <receiver
+139-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-20:39
+140            android:name="me.carda.awesome_notifications.DartDismissedNotificationReceiver"
+140-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-92
+141            android:exported="true" />
+141-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-36
+142        <receiver
+142-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-23:39
+143            android:name="me.carda.awesome_notifications.DartScheduledNotificationReceiver"
+143-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-92
+144            android:exported="true" />
+144-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+145        <receiver
+145-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-38:20
+146            android:name="me.carda.awesome_notifications.DartRefreshSchedulesReceiver"
+146-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-87
+147            android:enabled="true"
+147-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-35
+148            android:exported="true" >
+148-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-36
+149            <intent-filter>
+149-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-37:29
+150                <category android:name="android.intent.category.DEFAULT" />
+150-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-76
+150-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:27-73
+151
+152                <action android:name="android.intent.action.BOOT_COMPLETED" />
+152-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-79
+152-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-76
+153                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+153-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-86
+153-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:32:25-83
+154                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+154-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-84
+154-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-81
+155                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+155-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:34:17-82
+155-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:34:25-79
+156                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+156-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:35:17-82
+156-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:35:25-79
+157                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+157-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:36:17-107
+157-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:36:25-104
+158            </intent-filter>
+159        </receiver>
+160
+161        <service
+161-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-43:72
+162            android:name="me.carda.awesome_notifications.DartBackgroundService"
+162-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-80
+163            android:exported="false"
+163-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" />
+164-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-69
+165        <service
+165-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:44:9-49:43
+166            android:name="me.carda.awesome_notifications.core.services.ForegroundService"
+166-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-90
+167            android:enabled="true"
+167-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-35
+168            android:exported="false"
+168-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-37
+169            android:foregroundServiceType="phoneCall"
+169-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:48:13-54
+170            android:stopWithTask="true" />
+170-->[:awesome_notifications] C:\Users\hamza\smartcoaster\android\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:49:13-40
+171        <service
+171-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:21:9-28:19
+172            android:name="me.carda.awesome_notifications.core.managers.StatusBarManager"
+172-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:22:13-89
+173            android:exported="true"
+173-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:23:13-36
+174            android:label="My Notification Listener Service" >
+174-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:24:13-61
+175            <intent-filter>
+175-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:25:13-27:29
+176                <action android:name="android.service.notification.NotificationListenerService" />
+176-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:26:17-99
+176-->[me.carda:AndroidAwnCore:0.8.3] C:\Users\hamza\.gradle\caches\transforms-3\0f34aabbcbc321726e4bf765b5590b00\transformed\jetified-AndroidAwnCore-0.8.3\AndroidManifest.xml:26:25-96
+177            </intent-filter>
+178        </service>
+179
+180        <uses-library
+180-->[androidx.window:window:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+181            android:name="androidx.window.extensions"
+181-->[androidx.window:window:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+182            android:required="false" />
+182-->[androidx.window:window:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+183        <uses-library
+183-->[androidx.window:window:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+184            android:name="androidx.window.sidecar"
+184-->[androidx.window:window:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+185            android:required="false" />
+185-->[androidx.window:window:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+186
+187        <provider
+187-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\416b72c60f2871d1386ba3a79cb8bd10\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+188            android:name="androidx.startup.InitializationProvider"
+188-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\416b72c60f2871d1386ba3a79cb8bd10\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+189            android:authorities="com.example.smartcoaster.androidx-startup"
+189-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\416b72c60f2871d1386ba3a79cb8bd10\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+190            android:exported="false" >
+190-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\416b72c60f2871d1386ba3a79cb8bd10\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+191            <meta-data
+191-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\416b72c60f2871d1386ba3a79cb8bd10\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+192                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+192-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\416b72c60f2871d1386ba3a79cb8bd10\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+193                android:value="androidx.startup" />
+193-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\416b72c60f2871d1386ba3a79cb8bd10\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+194            <meta-data
+194-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hamza\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+195                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+195-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hamza\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+196                android:value="androidx.startup" />
+196-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hamza\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+197            <meta-data
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+198                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+199                android:value="androidx.startup" />
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+200        </provider>
+201
+202        <service
+202-->[androidx.room:room-runtime:2.5.0] C:\Users\hamza\.gradle\caches\transforms-3\dec5e180ccacc25e9320ca89d1a02235\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+203            android:name="androidx.room.MultiInstanceInvalidationService"
+203-->[androidx.room:room-runtime:2.5.0] C:\Users\hamza\.gradle\caches\transforms-3\dec5e180ccacc25e9320ca89d1a02235\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+204            android:directBootAware="true"
+204-->[androidx.room:room-runtime:2.5.0] C:\Users\hamza\.gradle\caches\transforms-3\dec5e180ccacc25e9320ca89d1a02235\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+205            android:exported="false" />
+205-->[androidx.room:room-runtime:2.5.0] C:\Users\hamza\.gradle\caches\transforms-3\dec5e180ccacc25e9320ca89d1a02235\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+206
+207        <receiver
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+208            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+209            android:directBootAware="false"
+209-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+210            android:enabled="true"
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+211            android:exported="true"
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+212            android:permission="android.permission.DUMP" >
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+213            <intent-filter>
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+214                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+215            </intent-filter>
+216            <intent-filter>
+216-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+217                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+217-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+217-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+218            </intent-filter>
+219            <intent-filter>
+219-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+220                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+220-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+220-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+221            </intent-filter>
+222            <intent-filter>
+222-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+223                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+223-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+223-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hamza\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+224            </intent-filter>
+225        </receiver>
+226    </application>
+227
+228</manifest>
