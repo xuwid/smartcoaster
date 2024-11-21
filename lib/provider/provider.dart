@@ -12,12 +12,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class DeviceProvider with ChangeNotifier {
   List<Device> _devices = [
-    // Device(
-    //     id: 'id',
-    //     isConfigured: true,
-    //     isConnecting: true,
-    //     levelDrink: 60,
-    //     deviceName: 'Dummy Data'),
+//    Device(
+    // id: 'id',
+    // isConfigured: false,
+    // isConnecting: true,
+    // levelDrink: 60,
+    // deviceName: 'Dummy Data'),
   ];
   List<BluetoothDevice> connectedDevices = [];
 

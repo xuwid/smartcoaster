@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_blue_plus/flutter_blue_plus.dart';
-import 'dart:convert';
 
 class CalibrationWidget extends StatefulWidget {
   final VoidCallback onFinish;
-  final BluetoothDevice bluetoothDevice;
 
-  const CalibrationWidget(
-      {super.key, required this.onFinish, required this.bluetoothDevice});
+  const CalibrationWidget({super.key, required this.onFinish});
 
   @override
   _CalibrationWidgetState createState() => _CalibrationWidgetState();
@@ -19,72 +15,23 @@ class _CalibrationWidgetState extends State<CalibrationWidget> {
   final int _totalSteps =
       5; // Total number of steps, including "Start Calibration"
 
-  @override
-  void initState() {
-    super.initState();
-    _sendCalibrationMessage(
-        0); // Send step_value 0 (Start Calibration) when widget is displayed
-  }
-
-  // List of step descriptions, including "Start Calibration" as the first step
+  // List of step descriptions
   final List<String> _stepTexts = [
-    'Start Calibration', // Initial step
+    'Start Calibration',
     'Step 1 Remove all objects from the coaster. Wait 5-10 seconds, then press Next',
     'Step 2 Place an empty cup on the coaster. Wait 5-10 seconds, then press Next',
     'Step 3 Fill the cup halfway. Wait 5-10 seconds, then press Next.',
     'Step 4 Fill the cup completely. Wait 5-10 seconds, then press Next',
   ];
 
-  // Method to send calibration message to Bluetooth device
-  void _sendCalibrationMessage(int stepValue) async {
-    Map<String, dynamic> commandData = {"a": "cal", "v": stepValue};
-    if (stepValue == 4) {
-      commandData = {"a": "save"}; // Send save command on step 4
-    }
-
-    // Discover Bluetooth services and characteristics
-    List<BluetoothService> services =
-        await widget.bluetoothDevice.discoverServices();
-    BluetoothCharacteristic? targetCharacteristic;
-
-    // Find the required characteristic
-    for (BluetoothService service in services) {
-      for (BluetoothCharacteristic characteristic in service.characteristics) {
-        if (characteristic.uuid.toString() ==
-            "01924279-d023-7b9c-ba06-cb9b1dc07eda") {
-          targetCharacteristic = characteristic;
-          break;
-        }
-      }
-      if (targetCharacteristic != null) {
-        break;
-      }
-    }
-
-    // Send the command if the characteristic is found
-    if (targetCharacteristic != null) {
-      String jsonData = jsonEncode(commandData); // Convert the command to JSON
-      List<int> bytesToSend = utf8.encode(jsonData);
-      await targetCharacteristic.write(bytesToSend, allowLongWrite: true);
-
-      print("Sent calibration step $stepValue to the device.");
-    } else {
-      print("Characteristic not found!");
-    }
-  }
-
   // Handle the button press for the next or finish step
   void _handleNextStep() {
     if (_currentStep + 1 < _totalSteps) {
-      _sendCalibrationMessage(
-          _currentStep); // Send Bluetooth message for the current step
       setState(() {
         _currentStep++; // Move to the next step
       });
     } else {
-      // Finish calibration and send the final save command
-      _sendCalibrationMessage(4); // Send save command on finish
-      widget.onFinish();
+      widget.onFinish(); // Trigger the finish callback
     }
   }
 
@@ -148,7 +95,8 @@ class _CalibrationWidgetState extends State<CalibrationWidget> {
                 ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue, // Button color
-                  padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
@@ -160,4 +108,19 @@ class _CalibrationWidgetState extends State<CalibrationWidget> {
       ),
     );
   }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: Scaffold(
+      backgroundColor: Colors.black,
+      body: Center(
+        child: CalibrationWidget(
+          onFinish: () {
+            print('Calibration Finished!');
+          },
+        ),
+      ),
+    ),
+  ));
 }
